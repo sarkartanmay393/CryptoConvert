@@ -10,4 +10,13 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  server: {
+    proxy: {
+      "/api": {
+        target: "http://194.195.113.187:8080",
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+  },
 });

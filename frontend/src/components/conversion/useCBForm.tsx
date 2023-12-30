@@ -8,6 +8,7 @@ export const formSchema = z.object({
   amount: z.number().min(1),
   conversionResult: z.number(),
 });
+
 export default function useCBForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),

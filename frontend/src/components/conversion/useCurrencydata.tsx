@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ConversionData, Cryptocurrency } from "@/lib/types";
-import fiatCurrencies from "@/currenices.json";
+import fiatCurrencies from "@/lib/currenices.json";
 import useCBForm from "./useCBForm";
 
 export default function useCurrencydata() {
@@ -10,7 +10,7 @@ export default function useCurrencydata() {
 
   const loadCrypto = async () => {
     try {
-      const response = await fetch("http://localhost:4321/api/currencies", {
+      const response = await fetch("/api/currencies", {
         method: "GET",
       });
       const parsedData = await response.json();
@@ -27,7 +27,7 @@ export default function useCurrencydata() {
         amount: form.getValues("amount"),
         symbol: "usd",
       };
-      const response = await fetch("http://localhost:4321/api/convert", {
+      const response = await fetch("/api/convert", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
