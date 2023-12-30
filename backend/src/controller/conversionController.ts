@@ -1,12 +1,12 @@
 import { Request, Response } from "express";
 
 const convertCurrency = async (req: Request, res: Response) => {
-  const { sourceCrypto, amount, targetCurrency }: RequestBody = req.body;
+  const { symbol, amount, convert }: RequestBody = req.body;
   try {
     const queryParams = new URLSearchParams({
       amount: amount.toString(),
-      id: sourceCrypto,
-      convert: targetCurrency,
+      symbol: symbol,
+      convert: convert,
     });
 
     const response = await fetch(
@@ -20,7 +20,7 @@ const convertCurrency = async (req: Request, res: Response) => {
     );
     const parsedData = await response.json();
     res.json({
-      message: `Convert ${amount} ${sourceCrypto} to ${targetCurrency}`,
+      message: `Convert ${amount} ${symbol} to ${convert}`,
       data: parsedData.data,
     });
   } catch (error) {
@@ -30,22 +30,8 @@ const convertCurrency = async (req: Request, res: Response) => {
 
 export default convertCurrency;
 
-type ConversionData = {
-  id: number;
-  symbol: string;
-  name: string;
-  amount: number;
-  last_updated: string;
-  quote: {
-    INR: {
-      price: number;
-      last_updated: string;
-    };
-  };
-};
-
 interface RequestBody {
-  sourceCrypto: string;
+  symbol: string;
   amount: number;
-  targetCurrency: string;
+  convert: string;
 }

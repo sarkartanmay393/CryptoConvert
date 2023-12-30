@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "name": "Bitcoin",
+    "symbol": "BTC",
+    "slug": "bitcoin",
+    "cmc_rank": 1,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 41923.78190619006
+      }
+    }
+  },
+  {
+    "id": 1027,
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "slug": "ethereum",
+    "cmc_rank": 2,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 2286.3582752589305
+      }
+    }
+  },
+  {
+    "id": 825,
+    "name": "Tether USDt",
+    "symbol": "USDT",
+    "slug": "tether",
+    "cmc_rank": 3,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 1.0001462049486336
+      }
+    }
+  },
+  {
+    "id": 1839,
+    "name": "BNB",
+    "symbol": "BNB",
+    "slug": "bnb",
+    "cmc_rank": 4,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 312.35708595240493
+      }
+    }
+  },
+  {
+    "id": 5426,
+    "name": "Solana",
+    "symbol": "SOL",
+    "slug": "solana",
+    "cmc_rank": 5,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 104.27494185260299
+      }
+    }
+  },
+  {
+    "id": 52,
+    "name": "XRP",
+    "symbol": "XRP",
+    "slug": "xrp",
+    "cmc_rank": 6,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.6194688942235016
+      }
+    }
+  },
+  {
+    "id": 3408,
+    "name": "USDC",
+    "symbol": "USDC",
+    "slug": "usd-coin",
+    "cmc_rank": 7,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 1.000208864018712
+      }
+    }
+  },
+  {
+    "id": 2010,
+    "name": "Cardano",
+    "symbol": "ADA",
+    "slug": "cardano",
+    "cmc_rank": 8,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.602521066905329
+      }
+    }
+  },
+  {
+    "id": 5805,
+    "name": "Avalanche",
+    "symbol": "AVAX",
+    "slug": "avalanche",
+    "cmc_rank": 9,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 40.13050978051959
+      }
+    }
+  },
+  {
+    "id": 74,
+    "name": "Dogecoin",
+    "symbol": "DOGE",
+    "slug": "dogecoin",
+    "cmc_rank": 10,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.09053480461620156
+      }
+    }
+  },
+  {
+    "id": 6636,
+    "name": "Polkadot",
+    "symbol": "DOT",
+    "slug": "polkadot-new",
+    "cmc_rank": 11,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 8.220784667501276
+      }
+    }
+  },
+  {
+    "id": 1958,
+    "name": "TRON",
+    "symbol": "TRX",
+    "slug": "tron",
+    "cmc_rank": 12,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.10550820280105352
+      }
+    }
+  },
+  {
+    "id": 3890,
+    "name": "Polygon",
+    "symbol": "MATIC",
+    "slug": "polygon",
+    "cmc_rank": 13,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.9665148015300199
+      }
+    }
+  },
+  {
+    "id": 1975,
+    "name": "Chainlink",
+    "symbol": "LINK",
+    "slug": "chainlink",
+    "cmc_rank": 14,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 15.4277050330943
+      }
+    }
+  },
+  {
+    "id": 11419,
+    "name": "Toncoin",
+    "symbol": "TON",
+    "slug": "toncoin",
+    "cmc_rank": 15,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 2.291329759688745
+      }
+    }
+  },
+  {
+    "id": 5994,
+    "name": "Shiba Inu",
+    "symbol": "SHIB",
+    "slug": "shiba-inu",
+    "cmc_rank": 16,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.000010407120127950946
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": "Litecoin",
+    "symbol": "LTC",
+    "slug": "litecoin",
+    "cmc_rank": 17,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 74.3370153528959
+      }
+    }
+  },
+  {
+    "id": 4943,
+    "name": "Dai",
+    "symbol": "DAI",
+    "slug": "multi-collateral-dai",
+    "cmc_rank": 18,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.9991162307887294
+      }
+    }
+  },
+  {
+    "id": 1831,
+    "name": "Bitcoin Cash",
+    "symbol": "BCH",
+    "slug": "bitcoin-cash",
+    "cmc_rank": 19,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 253.86645043703763
+      }
+    }
+  },
+  {
+    "id": 7083,
+    "name": "Uniswap",
+    "symbol": "UNI",
+    "slug": "uniswap",
+    "cmc_rank": 20,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 7.604532452345945
+      }
+    }
+  },
+  {
+    "id": 8916,
+    "name": "Internet Computer",
+    "symbol": "ICP",
+    "slug": "internet-computer",
+    "cmc_rank": 21,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 9.287661226819603
+      }
+    }
+  },
+  {
+    "id": 3794,
+    "name": "Cosmos",
+    "symbol": "ATOM",
+    "slug": "cosmos",
+    "cmc_rank": 22,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 10.899238408001937
+      }
+    }
+  },
+  {
+    "id": 3957,
+    "name": "UNUS SED LEO",
+    "symbol": "LEO",
+    "slug": "unus-sed-leo",
+    "cmc_rank": 23,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 3.924000507648732
+      }
+    }
+  },
+  {
+    "id": 512,
+    "name": "Stellar",
+    "symbol": "XLM",
+    "slug": "stellar",
+    "cmc_rank": 24,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.12826029485439153
+      }
+    }
+  },
+  {
+    "id": 6535,
+    "name": "NEAR Protocol",
+    "symbol": "NEAR",
+    "slug": "near-protocol",
+    "cmc_rank": 25,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 3.5941694374664004
+      }
+    }
+  },
+  {
+    "id": 11840,
+    "name": "Optimism",
+    "symbol": "OP",
+    "slug": "optimism-ethereum",
+    "cmc_rank": 26,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 3.724989959375049
+      }
+    }
+  },
+  {
+    "id": 3897,
+    "name": "OKB",
+    "symbol": "OKB",
+    "slug": "okb",
+    "cmc_rank": 27,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 54.74559936605858
+      }
+    }
+  },
+  {
+    "id": 1321,
+    "name": "Ethereum Classic",
+    "symbol": "ETC",
+    "slug": "ethereum-classic",
+    "cmc_rank": 28,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 22.239186583870694
+      }
+    }
+  },
+  {
+    "id": 328,
+    "name": "Monero",
+    "symbol": "XMR",
+    "slug": "monero",
+    "cmc_rank": 29,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 166.36188180523845
+      }
+    }
+  },
+  {
+    "id": 10603,
+    "name": "Immutable",
+    "symbol": "IMX",
+    "slug": "immutable-x",
+    "cmc_rank": 30,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 2.280239905363246
+      }
+    }
+  },
+  {
+    "id": 7226,
+    "name": "Injective",
+    "symbol": "INJ",
+    "slug": "injective",
+    "cmc_rank": 31,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 35.73746665678165
+      }
+    }
+  },
+  {
+    "id": 4642,
+    "name": "Hedera",
+    "symbol": "HBAR",
+    "slug": "hedera",
+    "cmc_rank": 32,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.08894171893024846
+      }
+    }
+  },
+  {
+    "id": 21794,
+    "name": "Aptos",
+    "symbol": "APT",
+    "slug": "aptos",
+    "cmc_rank": 33,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 9.62336103048884
+      }
+    }
+  },
+  {
+    "id": 2280,
+    "name": "Filecoin",
+    "symbol": "FIL",
+    "slug": "filecoin",
+    "cmc_rank": 34,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 5.790777341269501
+      }
+    }
+  },
+  {
+    "id": 20396,
+    "name": "Kaspa",
+    "symbol": "KAS",
+    "slug": "kaspa",
+    "cmc_rank": 35,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.1181090363629102
+      }
+    }
+  },
+  {
+    "id": 3077,
+    "name": "VeChain",
+    "symbol": "VET",
+    "slug": "vechain",
+    "cmc_rank": 36,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.03478617253812227
+      }
+    }
+  },
+  {
+    "id": 3635,
+    "name": "Cronos",
+    "symbol": "CRO",
+    "slug": "cronos",
+    "cmc_rank": 37,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.09873327943094203
+      }
+    }
+  },
+  {
+    "id": 8000,
+    "name": "Lido DAO",
+    "symbol": "LDO",
+    "slug": "lido-dao",
+    "cmc_rank": 38,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 2.7542137622902936
+      }
+    }
+  },
+  {
+    "id": 2563,
+    "name": "TrueUSD",
+    "symbol": "TUSD",
+    "slug": "trueusd",
+    "cmc_rank": 39,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 1.0003463344571184
+      }
+    }
+  },
+  {
+    "id": 4847,
+    "name": "Stacks",
+    "symbol": "STX",
+    "slug": "stacks",
+    "cmc_rank": 40,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 1.4323166882151903
+      }
+    }
+  },
+  {
+    "id": 27075,
+    "name": "Mantle",
+    "symbol": "MNT",
+    "slug": "mantle",
+    "cmc_rank": 41,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.6531148112461694
+      }
+    }
+  },
+  {
+    "id": 22861,
+    "name": "Celestia",
+    "symbol": "TIA",
+    "slug": "celestia",
+    "cmc_rank": 42,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 12.24190930776392
+      }
+    }
+  },
+  {
+    "id": 3602,
+    "name": "Bitcoin SV",
+    "symbol": "BSV",
+    "slug": "bitcoin-sv",
+    "cmc_rank": 43,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 95.64014213602336
+      }
+    }
+  },
+  {
+    "id": 6892,
+    "name": "MultiversX",
+    "symbol": "EGLD",
+    "slug": "multiversx-egld",
+    "cmc_rank": 44,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 70.96580011027925
+      }
+    }
+  },
+  {
+    "id": 11841,
+    "name": "Arbitrum",
+    "symbol": "ARB",
+    "slug": "arbitrum",
+    "cmc_rank": 45,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 1.4468855330695274
+      }
+    }
+  },
+  {
+    "id": 26081,
+    "name": "First Digital USD",
+    "symbol": "FDUSD",
+    "slug": "first-digital-usd",
+    "cmc_rank": 46,
+    "last_updated": "2023-12-29T22:00:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 1.0010394648542544
+      }
+    }
+  },
+  {
+    "id": 4030,
+    "name": "Algorand",
+    "symbol": "ALGO",
+    "slug": "algorand",
+    "cmc_rank": 47,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.2248178044354294
+      }
+    }
+  },
+  {
+    "id": 4157,
+    "name": "THORChain",
+    "symbol": "RUNE",
+    "slug": "thorchain",
+    "cmc_rank": 48,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 5.307583889139582
+      }
+    }
+  },
+  {
+    "id": 6719,
+    "name": "The Graph",
+    "symbol": "GRT",
+    "slug": "the-graph",
+    "cmc_rank": 49,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.18106961916618525
+      }
+    }
+  },
+  {
+    "id": 5690,
+    "name": "Render",
+    "symbol": "RNDR",
+    "slug": "render",
+    "cmc_rank": 50,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 4.549894840823521
+      }
+    }
+  },
+  {
+    "id": 28683,
+    "name": "SATS",
+    "symbol": "1000SATS",
+    "slug": "sats",
+    "cmc_rank": 51,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.0007871682456651901
+      }
+    }
+  },
+  {
+    "id": 7278,
+    "name": "Aave",
+    "symbol": "AAVE",
+    "slug": "aave",
+    "cmc_rank": 52,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 110.98956180054631
+      }
+    }
+  },
+  {
+    "id": 3155,
+    "name": "Quant",
+    "symbol": "QNT",
+    "slug": "quant",
+    "cmc_rank": 53,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 133.54112257367643
+      }
+    }
+  },
+  {
+    "id": 25028,
+    "name": "ORDI",
+    "symbol": "ORDI",
+    "slug": "ordi",
+    "cmc_rank": 54,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 74.17512953540363
+      }
+    }
+  },
+  {
+    "id": 1518,
+    "name": "Maker",
+    "symbol": "MKR",
+    "slug": "maker",
+    "cmc_rank": 55,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 1560.887392723637
+      }
+    }
+  },
+  {
+    "id": 8646,
+    "name": "Mina",
+    "symbol": "MINA",
+    "slug": "mina",
+    "cmc_rank": 56,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 1.3250376635174856
+      }
+    }
+  },
+  {
+    "id": 4558,
+    "name": "Flow",
+    "symbol": "FLOW",
+    "slug": "flow",
+    "cmc_rank": 57,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.903979789584626
+      }
+    }
+  },
+  {
+    "id": 3513,
+    "name": "Fantom",
+    "symbol": "FTM",
+    "slug": "fantom",
+    "cmc_rank": 58,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.474589825955769
+      }
+    }
+  },
+  {
+    "id": 23149,
+    "name": "Sei",
+    "symbol": "SEI",
+    "slug": "sei",
+    "cmc_rank": 59,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.5665886016426542
+      }
+    }
+  },
+  {
+    "id": 2416,
+    "name": "Theta Network",
+    "symbol": "THETA",
+    "slug": "theta-network",
+    "cmc_rank": 60,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 1.266436625941551
+      }
+    }
+  },
+  {
+    "id": 6210,
+    "name": "The Sandbox",
+    "symbol": "SAND",
+    "slug": "the-sandbox",
+    "cmc_rank": 61,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.5696455546975054
+      }
+    }
+  },
+  {
+    "id": 6783,
+    "name": "Axie Infinity",
+    "symbol": "AXS",
+    "slug": "axie-infinity",
+    "cmc_rank": 62,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 9.062315333442726
+      }
+    }
+  },
+  {
+    "id": 2586,
+    "name": "Synthetix",
+    "symbol": "SNX",
+    "slug": "synthetix",
+    "cmc_rank": 63,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 3.8628378163349044
+      }
+    }
+  },
+  {
+    "id": 16086,
+    "name": "BitTorrent (New)",
+    "symbol": "BTT",
+    "slug": "bittorrent-new",
+    "cmc_rank": 64,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.0000011955064294535243
+      }
+    }
+  },
+  {
+    "id": 5665,
+    "name": "Helium",
+    "symbol": "HNT",
+    "slug": "helium",
+    "cmc_rank": 65,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 6.656196073514461
+      }
+    }
+  },
+  {
+    "id": 4687,
+    "name": "BUSD",
+    "symbol": "BUSD",
+    "slug": "binance-usd",
+    "cmc_rank": 66,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 1.000358618227947
+      }
+    }
+  },
+  {
+    "id": 2087,
+    "name": "KuCoin Token",
+    "symbol": "KCS",
+    "slug": "kucoin-token",
+    "cmc_rank": 67,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 10.366615851250906
+      }
+    }
+  },
+  {
+    "id": 7548,
+    "name": "WEMIX",
+    "symbol": "WEMIX",
+    "slug": "wemix",
+    "cmc_rank": 68,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 2.8419551269092174
+      }
+    }
+  },
+  {
+    "id": 4195,
+    "name": "FTX Token",
+    "symbol": "FTT",
+    "slug": "ftx-token",
+    "cmc_rank": 69,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 3.0335326252863433
+      }
+    }
+  },
+  {
+    "id": 2011,
+    "name": "Tezos",
+    "symbol": "XTZ",
+    "slug": "tezos",
+    "cmc_rank": 70,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 1.023808820291765
+      }
+    }
+  },
+  {
+    "id": 1966,
+    "name": "Decentraland",
+    "symbol": "MANA",
+    "slug": "decentraland",
+    "cmc_rank": 71,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.5121971393204255
+      }
+    }
+  },
+  {
+    "id": 1376,
+    "name": "Neo",
+    "symbol": "NEO",
+    "slug": "neo",
+    "cmc_rank": 72,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 13.68246540727255
+      }
+    }
+  },
+  {
+    "id": 4846,
+    "name": "Kava",
+    "symbol": "KAVA",
+    "slug": "kava",
+    "cmc_rank": 73,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.8757848259982023
+      }
+    }
+  },
+  {
+    "id": 1765,
+    "name": "EOS",
+    "symbol": "EOS",
+    "slug": "eos",
+    "cmc_rank": 74,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.8448945592955647
+      }
+    }
+  },
+  {
+    "id": 23095,
+    "name": "Bonk",
+    "symbol": "BONK",
+    "slug": "bonk1",
+    "cmc_rank": 75,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.000014933979005380747
+      }
+    }
+  },
+  {
+    "id": 1720,
+    "name": "IOTA",
+    "symbol": "IOTA",
+    "slug": "iota",
+    "cmc_rank": 76,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.29365442687999216
+      }
+    }
+  },
+  {
+    "id": 7653,
+    "name": "Oasis Network",
+    "symbol": "ROSE",
+    "slug": "oasis-network",
+    "cmc_rank": 77,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.1287717265632531
+      }
+    }
+  },
+  {
+    "id": 28298,
+    "name": "Beam",
+    "symbol": "BEAM",
+    "slug": "onbeam",
+    "cmc_rank": 78,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.017832587770189496
+      }
+    }
+  },
+  {
+    "id": 7186,
+    "name": "PancakeSwap",
+    "symbol": "CAKE",
+    "slug": "pancakeswap",
+    "cmc_rank": 79,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 3.4456253463730784
+      }
+    }
+  },
+  {
+    "id": 7080,
+    "name": "Gala",
+    "symbol": "GALA",
+    "slug": "gala",
+    "cmc_rank": 80,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.030575987378556015
+      }
+    }
+  },
+  {
+    "id": 20947,
+    "name": "Sui",
+    "symbol": "SUI",
+    "slug": "sui",
+    "cmc_rank": 81,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.7999211298592734
+      }
+    }
+  },
+  {
+    "id": 4172,
+    "name": "Terra Classic",
+    "symbol": "LUNC",
+    "slug": "terra-luna",
+    "cmc_rank": 82,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.00013958516983296276
+      }
+    }
+  },
+  {
+    "id": 4256,
+    "name": "Klaytn",
+    "symbol": "KLAY",
+    "slug": "klaytn",
+    "cmc_rank": 83,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.23430468375033145
+      }
+    }
+  },
+  {
+    "id": 11092,
+    "name": "Bitget Token",
+    "symbol": "BGB",
+    "slug": "bitget-token-new",
+    "cmc_rank": 84,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.5756965137937105
+      }
+    }
+  },
+  {
+    "id": 12220,
+    "name": "Osmosis",
+    "symbol": "OSMO",
+    "slug": "osmosis",
+    "cmc_rank": 85,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 1.5818375634705872
+      }
+    }
+  },
+  {
+    "id": 2634,
+    "name": "XDC Network",
+    "symbol": "XDC",
+    "slug": "xdc-network",
+    "cmc_rank": 86,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.05531317579576972
+      }
+    }
+  },
+  {
+    "id": 7501,
+    "name": "WOO Network",
+    "symbol": "WOO",
+    "slug": "wootrade",
+    "cmc_rank": 87,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.4228546215152544
+      }
+    }
+  },
+  {
+    "id": 10791,
+    "name": "eCash",
+    "symbol": "XEC",
+    "slug": "ecash",
+    "cmc_rank": 88,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.000037601960650901446
+      }
+    }
+  },
+  {
+    "id": 19891,
+    "name": "USDD",
+    "symbol": "USDD",
+    "slug": "usdd",
+    "cmc_rank": 89,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.9848429478365516
+      }
+    }
+  },
+  {
+    "id": 6953,
+    "name": "Frax Share",
+    "symbol": "FXS",
+    "slug": "frax-share",
+    "cmc_rank": 90,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 9.022840872287858
+      }
+    }
+  },
+  {
+    "id": 4066,
+    "name": "Chiliz",
+    "symbol": "CHZ",
+    "slug": "chiliz",
+    "cmc_rank": 91,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.08773720947082855
+      }
+    }
+  },
+  {
+    "id": 12885,
+    "name": "Astar",
+    "symbol": "ASTR",
+    "slug": "astar",
+    "cmc_rank": 92,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.1247427270149437
+      }
+    }
+  },
+  {
+    "id": 6538,
+    "name": "Curve DAO Token",
+    "symbol": "CRV",
+    "slug": "curve-dao-token",
+    "cmc_rank": 93,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.627502224000915
+      }
+    }
+  },
+  {
+    "id": 7334,
+    "name": "Conflux",
+    "symbol": "CFX",
+    "slug": "conflux-network",
+    "cmc_rank": 94,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.1824102106359924
+      }
+    }
+  },
+  {
+    "id": 5632,
+    "name": "Arweave",
+    "symbol": "AR",
+    "slug": "arweave",
+    "cmc_rank": 95,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 9.818854908179214
+      }
+    }
+  },
+  {
+    "id": 2943,
+    "name": "Rocket Pool",
+    "symbol": "RPL",
+    "slug": "rocket-pool",
+    "cmc_rank": 96,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 31.179905891853746
+      }
+    }
+  },
+  {
+    "id": 17799,
+    "name": "Axelar",
+    "symbol": "AXL",
+    "slug": "axelar",
+    "cmc_rank": 97,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 1.1972876277496267
+      }
+    }
+  },
+  {
+    "id": 18876,
+    "name": "ApeCoin",
+    "symbol": "APE",
+    "slug": "apecoin-ape",
+    "cmc_rank": 98,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 1.6623065525150866
+      }
+    }
+  },
+  {
+    "id": 4944,
+    "name": "Tellor",
+    "symbol": "TRB",
+    "slug": "tellor",
+    "cmc_rank": 99,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 239.60722971234722
+      }
+    }
+  },
+  {
+    "id": 23121,
+    "name": "Blur",
+    "symbol": "BLUR",
+    "slug": "blur-token",
+    "cmc_rank": 100,
+    "last_updated": "2023-12-29T21:59:00.000Z",
+    "quote": {
+      "USD": {
+        "price": 0.48691505630960613
+      }
+    }
+  }
+]
