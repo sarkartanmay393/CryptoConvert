@@ -1,1 +1,1 @@
-concurrently "cd backend && pn run dev"  " cd frontend && pn run dev"
+concurrently "cd backend && pnpm run dev"  " cd frontend && pnpm run dev"
