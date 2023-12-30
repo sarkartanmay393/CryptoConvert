@@ -1,13 +1,12 @@
 FROM node:latest
 
 WORKDIR /app
-COPY package*.json .
+COPY package.json .
 
-RUN npm install -g @pnpm/exe
-RUN pnpm install
+RUN npm install
 
 COPY . .
-RUN pnpm run build
+RUN npm run build
 
 EXPOSE 3000
-CMD ["pnpm", "run", "preview"]
+CMD ["npm", "run", "preview"]

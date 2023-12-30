@@ -8,8 +8,8 @@ services:
     ports:
       - "8080:8080"
     restart: always
-    volumes:
-      - ./backend:/app
+    environment:
+      CMC_API_KEY: ad33172e-865f-40d6-83a4-0b4d56cd4dcb
   frontend:
     build:
       context: ./frontend
@@ -20,5 +20,3 @@ services:
     restart: always
     depends_on:
       - backend
-    volumes:
-      - ./frontend:/app
