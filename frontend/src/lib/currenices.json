@@ -9,7 +9,7 @@
   {
     "Flag": "https://www.currencyremitapp.com/wp-content/themes/currencyremitapp/images/countryimages/unitedstates.png",
     "CountryName": "United States",
-    "name": "Dollar",
+    "name": "US Dollar",
     "symbol": "USD",
     "icon": "$"
   },
@@ -44,7 +44,7 @@
   {
     "Flag": "https://www.currencyremitapp.com/wp-content/themes/currencyremitapp/images/countryimages/australia.png",
     "CountryName": "Australia",
-    "name": "Dollar",
+    "name": "Australia Dollar",
     "symbol": "AUD",
     "icon": "$"
   },
@@ -58,14 +58,14 @@
   {
     "Flag": "https://www.currencyremitapp.com/wp-content/themes/currencyremitapp/images/countryimages/bahamas.png",
     "CountryName": "Bahamas",
-    "name": "Dollar",
+    "name": "Bahamas Dollar",
     "symbol": "BSD",
     "icon": "$"
   },
   {
     "Flag": "https://www.currencyremitapp.com/wp-content/themes/currencyremitapp/images/countryimages/barbados.png",
     "CountryName": "Barbados",
-    "name": "Dollar",
+    "name": "Barbados Dollar",
     "symbol": "BBD",
     "icon": "$"
   },
@@ -79,7 +79,7 @@
   {
     "Flag": "https://www.currencyremitapp.com/wp-content/themes/currencyremitapp/images/countryimages/belize.png",
     "CountryName": "Belize",
-    "name": "Dollar",
+    "name": "Belize Dollar",
     "symbol": "BZD",
     "icon": "BZ$"
   },

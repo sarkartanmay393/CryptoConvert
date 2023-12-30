@@ -36,35 +36,26 @@ export default function Combobox({
 }: CBProps) {
   const [open, setOpen] = React.useState(false);
   const currencies = currencyData.map((c) => ({
+    // we dont know what types of currency data it is
     name: c.name,
     symbol: c.symbol.toLowerCase(),
-    icon: c.icon || "",
+    icon: c.icon,
   }));
-  const whatsTheIcon = currencies.find((c) => c.symbol === value)?.icon;
-  const whatsTheName = currencies.find((c) => c.symbol === value)?.name;
+
+  // to display on trigger components(e.g.btn)
+  const currentItem = currencies.find((c) => c.symbol === value);
 
   return (
     <Popover key={name} open={open} onOpenChange={setOpen}>
       <PopoverTrigger key={name} id={title} asChild>
         <Button
-          variant="outline"
           role="combobox"
+          variant="outline"
           aria-expanded={open}
           className={`w-[200px] justify-between ${focus && `border-green-500`}`}
         >
-          <div
-            className={cn(
-              !whatsTheIcon && "hidden",
-              "w-[24px] h-[24px]  mr-2 flex justify-center items-center"
-            )}
-          >
-            <h3 className="text-black dark:text-white">{whatsTheIcon}</h3>
-          </div>
-          {value
-            ? whatsTheIcon
-              ? value.toUpperCase()
-              : whatsTheName
-            : `Select ${title?.toLowerCase()}...`}
+          {currentItem?.icon && <SmallIcon iconTxt={currentItem.icon} />}
+          {value ? currentItem?.name : `Select ${title?.toLowerCase()}...`}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
@@ -88,15 +79,8 @@ export default function Combobox({
                     value === c.symbol ? "opacity-100" : "opacity-0"
                   )}
                 />
-                <div
-                  className={cn(
-                    !c.icon && "hidden",
-                    "w-[24px] h-[24px]  mr-2 flex justify-center items-center"
-                  )}
-                >
-                  <h3 className="text-black dark:text-white">{c.icon}</h3>
-                </div>
-                {c.icon ? c.symbol.toUpperCase() : c.name}
+                {c.icon && <SmallIcon iconTxt={c.icon} />}
+                {c.name}
               </CommandItem>
             ))}
           </CommandGroup>
@@ -105,3 +89,11 @@ export default function Combobox({
     </Popover>
   );
 }
+
+const SmallIcon = ({ iconTxt }: { iconTxt: string }) => {
+  return (
+    <div className={"w-[24px] h-[24px] mr-2 flex justify-center items-center"}>
+      <h3 className="text-black dark:text-white">{iconTxt}</h3>
+    </div>
+  );
+};

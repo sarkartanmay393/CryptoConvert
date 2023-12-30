@@ -19,6 +19,7 @@ import { Label } from "@radix-ui/react-label";
 import useCBForm from "./useCBForm";
 import useCurrencydata from "./useCurrencydata";
 import Spinner from "../Spinner";
+import { cn } from "@/lib/utils";
 
 export default function ConversionBoard() {
   const { form } = useCBForm();
@@ -39,7 +40,6 @@ export default function ConversionBoard() {
   useEffect(() => {
     const amount = form.getValues("amount");
     form.setValue("conversionResult", sourceFactor * amount * targetFactor);
-    // console.log(sourceFactor);
   }, [form, sourceFactor, targetFactor]);
 
   return (
@@ -47,11 +47,7 @@ export default function ConversionBoard() {
       <BoardHeader />
       <CardContent className="space-y-4">
         <Form {...form}>
-          <form
-            // onSubmit={form.handleSubmit(undefined)}
-            onReset={() => form.reset()}
-            className="w-full space-y-4"
-          >
+          <form onReset={() => form.reset()} className="w-full space-y-4">
             <FormField
               control={form.control}
               name="sourceCrypto"
@@ -85,28 +81,36 @@ export default function ConversionBoard() {
                 <FormItem className="space-x-2">
                   <FormControl>
                     <div
-                      className={`h-[38px] flex justify-center items-center gap-1`}
+                      className={cn(
+                        `h-[48px] flex justify-center rounded-sm items-center gap-1 p-1`,
+                        form.getValues("sourceCrypto") &&
+                          `ring-[1px] ring-green-400`
+                      )}
                     >
-                      <div className="w-[48px] h-[38px] border-[1px] border-[rgb(250, 250, 250, 0.1)] rounded-sm flex justify-center items-center text-sm">
+                      <div
+                        className={cn(
+                          "w-[48px] h-full border-[1px] border-[rgb(250, 250, 250, 0.1)] rounded-sm flex justify-center items-center text-sm"
+                        )}
+                      >
                         {form.getValues("sourceCrypto") || "-"}
                       </div>
                       <Input
                         id="amount"
                         placeholder="Enter amount"
                         type="number"
-                        className={`${
-                          form.getValues("sourceCrypto") && `ring-0`
-                        } flex-1`}
+                        className={cn("flex-1 rounded-sm h-full")}
                         {...field}
                         onChange={(e) => {
-                          field.onChange(e);
-                          const amount = e.target.value;
-                          form.setValue(
-                            "conversionResult",
-                            sourceFactor * Number(amount)
-                          );
+                          if (form.getValues("sourceCrypto")) {
+                            field.onChange(e);
+                            const amount = e.target.value;
+                            form.setValue(
+                              "conversionResult",
+                              sourceFactor * Number(amount)
+                            );
+                          }
                         }}
-                        disabled={!form.getValues("sourceCrypto")}
+                        // disabled={!form.getValues("sourceCrypto")}
                       />
                     </div>
                   </FormControl>
@@ -151,7 +155,9 @@ export default function ConversionBoard() {
                   <FormControl>
                     <div
                       id="conversionResult"
-                      className="w-full flex font-extrabold border-[1px] p-2 justify-center"
+                      className={
+                        "w-full flex font-extrabold border-[1px] p-2 justify-center rounded-sm ring-[1px]"
+                      }
                     >
                       <Label>
                         {targetLoading ? (
