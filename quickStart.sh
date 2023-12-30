@@ -1,0 +1,1 @@
+concurrently "cd backend && pn run dev"  " cd frontend && pn run dev"
