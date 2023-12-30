@@ -37,8 +37,11 @@ export default function Combobox({
   const [open, setOpen] = React.useState(false);
   const currencies = currencyData.map((c) => ({
     name: c.name,
-    symbol: c.symbol,
+    symbol: c.symbol.toLowerCase(),
+    icon: c.icon || "",
   }));
+  const whatsTheIcon = currencies.find((c) => c.symbol === value)?.icon;
+  const whatsTheName = currencies.find((c) => c.symbol === value)?.name;
 
   return (
     <Popover key={name} open={open} onOpenChange={setOpen}>
@@ -49,7 +52,19 @@ export default function Combobox({
           aria-expanded={open}
           className={`w-[200px] justify-between ${focus && `border-green-500`}`}
         >
-          {value ? value.toUpperCase() : `Select ${title?.toLowerCase()}...`}
+          <div
+            className={cn(
+              !whatsTheIcon && "hidden",
+              "w-[24px] h-[24px]  mr-2 flex justify-center items-center"
+            )}
+          >
+            <h3 className="text-black dark:text-white">{whatsTheIcon}</h3>
+          </div>
+          {value
+            ? whatsTheIcon
+              ? value.toUpperCase()
+              : whatsTheName
+            : `Select ${title?.toLowerCase()}...`}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
@@ -61,20 +76,27 @@ export default function Combobox({
             {currencies.map((c, i) => (
               <CommandItem
                 key={c.symbol + i}
-                value={c.symbol}
+                value={c.icon ? c.symbol : c.name}
                 onSelect={(currentValue) => {
-                  onChange(currentValue);
+                  onChange(c.icon ? currentValue : c.symbol);
                   setOpen(false);
                 }}
               >
-                {/* TODO: can add currencies icon */}
                 <Check
                   className={cn(
-                    "mr-2 h-4 w-4 text-black ",
+                    "mr-2 h-4 w-4 text-black dark:text-white ",
                     value === c.symbol ? "opacity-100" : "opacity-0"
                   )}
                 />
-                {c.name}
+                <div
+                  className={cn(
+                    !c.icon && "hidden",
+                    "w-[24px] h-[24px]  mr-2 flex justify-center items-center"
+                  )}
+                >
+                  <h3 className="text-black dark:text-white">{c.icon}</h3>
+                </div>
+                {c.icon ? c.symbol.toUpperCase() : c.name}
               </CommandItem>
             ))}
           </CommandGroup>

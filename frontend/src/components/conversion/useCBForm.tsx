@@ -14,7 +14,7 @@ export default function useCBForm() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       sourceCrypto: "",
-      targetCurrency: "USD",
+      targetCurrency: "usd",
       amount: 1,
       conversionResult: 0,
     },

@@ -6,7 +6,7 @@ import { SunIcon, MoonIcon } from "lucide-react";
 
 export default function Homepage() {
   return (
-    <div className="w-full h-full flex items-center justify-center px-2">
+    <div className="container h-full flex items-center justify-center">
       <Button
         className="fixed z-10 right-0 top-0 m-4"
         variant="outline"

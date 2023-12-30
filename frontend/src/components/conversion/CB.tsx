@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import BoardHeader from "./Header";
 import { useEffect, useState } from "react";
 
-import * as z from "zod";
 import Combobox from "./Combobox";
 
 import {
@@ -17,8 +16,9 @@ import {
 } from "@/components/ui/form";
 import { Separator } from "../ui/separator";
 import { Label } from "@radix-ui/react-label";
-import useCBForm, { formSchema } from "./useCBForm";
+import useCBForm from "./useCBForm";
 import useCurrencydata from "./useCurrencydata";
+import Spinner from "../Spinner";
 
 export default function ConversionBoard() {
   const { form } = useCBForm();
@@ -31,11 +31,6 @@ export default function ConversionBoard() {
     fetchDiffCurrencyFactor,
     targetFactor,
   } = useCurrencydata();
-
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    // convertCurrency();
-  }
 
   useEffect(() => {
     loadCrypto();
@@ -53,7 +48,7 @@ export default function ConversionBoard() {
       <CardContent className="space-y-4">
         <Form {...form}>
           <form
-            onSubmit={form.handleSubmit(onSubmit)}
+            // onSubmit={form.handleSubmit(undefined)}
             onReset={() => form.reset()}
             className="w-full space-y-4"
           >
@@ -89,24 +84,31 @@ export default function ConversionBoard() {
               render={({ field }) => (
                 <FormItem className="space-x-2">
                   <FormControl>
-                    <Input
-                      id="amount"
-                      placeholder="Enter amount"
-                      type="number"
-                      className={`${
-                        form.getValues("sourceCrypto") && `ring-1`
-                      }`}
-                      {...field}
-                      onChange={(e) => {
-                        field.onChange(e);
-                        const amount = e.target.value;
-                        form.setValue(
-                          "conversionResult",
-                          sourceFactor * Number(amount)
-                        );
-                      }}
-                      disabled={!form.getValues("sourceCrypto")}
-                    />
+                    <div
+                      className={`h-[38px] flex justify-center items-center gap-1`}
+                    >
+                      <div className="w-[48px] h-[38px] border-[1px] border-[rgb(250, 250, 250, 0.1)] rounded-sm flex justify-center items-center text-sm">
+                        {form.getValues("sourceCrypto") || "-"}
+                      </div>
+                      <Input
+                        id="amount"
+                        placeholder="Enter amount"
+                        type="number"
+                        className={`${
+                          form.getValues("sourceCrypto") && `ring-0`
+                        } flex-1`}
+                        {...field}
+                        onChange={(e) => {
+                          field.onChange(e);
+                          const amount = e.target.value;
+                          form.setValue(
+                            "conversionResult",
+                            sourceFactor * Number(amount)
+                          );
+                        }}
+                        disabled={!form.getValues("sourceCrypto")}
+                      />
+                    </div>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -149,14 +151,16 @@ export default function ConversionBoard() {
                   <FormControl>
                     <div
                       id="conversionResult"
-                      className="w-full flex font-bold text-green-800 border-[1px] p-2 justify-center"
+                      className="w-full flex font-extrabold border-[1px] p-2 justify-center"
                     >
                       <Label>
-                        {targetLoading
-                          ? "Loading"
-                          : form.getValues("sourceCrypto")
-                          ? field.value
-                          : 0}
+                        {targetLoading ? (
+                          <Spinner />
+                        ) : form.getValues("sourceCrypto") ? (
+                          field.value
+                        ) : (
+                          0
+                        )}
                       </Label>
                     </div>
                   </FormControl>

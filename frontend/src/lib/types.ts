@@ -10,10 +10,14 @@ export interface Cryptocurrency {
       price: number;
     };
   };
+  icon?: string;
 }
 
 export interface Faitcurrency {
+  Flag: string;
+  CountryName: string;
   name: string;
+  icon: string;
   symbol: string;
 }
 
