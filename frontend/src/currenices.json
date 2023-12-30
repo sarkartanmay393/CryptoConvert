@@ -1,0 +1,266 @@
+[
+  {
+    "name": "Indian Rupee",
+    "symbol": "INR"
+  },
+  {
+    "name": "United States Dollar",
+    "symbol": "USD"
+  },
+  {
+    "name": "Euro",
+    "symbol": "EUR"
+  },
+  {
+    "name": "British Pound Sterling",
+    "symbol": "GBP"
+  },
+  {
+    "name": "Japanese Yen",
+    "symbol": "JPY"
+  },
+  {
+    "name": "Australian Dollar",
+    "symbol": "AUD"
+  },
+  {
+    "name": "Canadian Dollar",
+    "symbol": "CAD"
+  },
+  {
+    "name": "Swiss Franc",
+    "symbol": "CHF"
+  },
+  {
+    "name": "Chinese Yuan",
+    "symbol": "CNY"
+  },
+  {
+    "name": "Swedish Krona",
+    "symbol": "SEK"
+  },
+  {
+    "name": "New Zealand Dollar",
+    "symbol": "NZD"
+  },
+  {
+    "name": "Mexican Peso",
+    "symbol": "MXN"
+  },
+  {
+    "name": "Singapore Dollar",
+    "symbol": "SGD"
+  },
+  {
+    "name": "Hong Kong Dollar",
+    "symbol": "HKD"
+  },
+  {
+    "name": "Norwegian Krone",
+    "symbol": "NOK"
+  },
+  {
+    "name": "South Korean Won",
+    "symbol": "KRW"
+  },
+  {
+    "name": "Turkish Lira",
+    "symbol": "TRY"
+  },
+  {
+    "name": "Russian Ruble",
+    "symbol": "RUB"
+  },
+  {
+    "name": "Brazilian Real",
+    "symbol": "BRL"
+  },
+  {
+    "name": "South African Rand",
+    "symbol": "ZAR"
+  },
+  {
+    "name": "Emirati Dirham",
+    "symbol": "AED"
+  },
+  {
+    "name": "Saudi Riyal",
+    "symbol": "SAR"
+  },
+  {
+    "name": "Kuwaiti Dinar",
+    "symbol": "KWD"
+  },
+  {
+    "name": "Qatari Riyal",
+    "symbol": "QAR"
+  },
+  {
+    "name": "Omani Rial",
+    "symbol": "OMR"
+  },
+  {
+    "name": "Bahraini Dinar",
+    "symbol": "BHD"
+  },
+  {
+    "name": "Jordanian Dinar",
+    "symbol": "JOD"
+  },
+  {
+    "name": "Egyptian Pound",
+    "symbol": "EGP"
+  },
+  {
+    "name": "Israeli New Shekel",
+    "symbol": "ILS"
+  },
+  {
+    "name": "Danish Krone",
+    "symbol": "DKK"
+  },
+  {
+    "name": "Polish Zloty",
+    "symbol": "PLN"
+  },
+  {
+    "name": "Thai Baht",
+    "symbol": "THB"
+  },
+  {
+    "name": "Malaysian Ringgit",
+    "symbol": "MYR"
+  },
+  {
+    "name": "Indonesian Rupiah",
+    "symbol": "IDR"
+  },
+  {
+    "name": "Philippine Peso",
+    "symbol": "PHP"
+  },
+  {
+    "name": "Czech Koruna",
+    "symbol": "CZK"
+  },
+  {
+    "name": "Hungarian Forint",
+    "symbol": "HUF"
+  },
+  {
+    "name": "Icelandic Krona",
+    "symbol": "ISK"
+  },
+  {
+    "name": "Croatian Kuna",
+    "symbol": "HRK"
+  },
+  {
+    "name": "Romanian Leu",
+    "symbol": "RON"
+  },
+  {
+    "name": "Bulgarian Lev",
+    "symbol": "BGN"
+  },
+  {
+    "name": "Ukrainian Hryvnia",
+    "symbol": "UAH"
+  },
+  {
+    "name": "Serbian Dinar",
+    "symbol": "RSD"
+  },
+  {
+    "name": "Belarusian Ruble",
+    "symbol": "BYN"
+  },
+  {
+    "name": "Georgian Lari",
+    "symbol": "GEL"
+  },
+  {
+    "name": "Armenian Dram",
+    "symbol": "AMD"
+  },
+  {
+    "name": "Moldovan Leu",
+    "symbol": "MDL"
+  },
+  {
+    "name": "Azerbaijani Manat",
+    "symbol": "AZN"
+  },
+  {
+    "name": "Turkmenistan Manat",
+    "symbol": "TMT"
+  },
+  {
+    "name": "Uzbekistani Som",
+    "symbol": "UZS"
+  },
+  {
+    "name": "Kazakhstani Tenge",
+    "symbol": "KZT"
+  },
+  {
+    "name": "Kyrgyzstani Som",
+    "symbol": "KGS"
+  },
+  {
+    "name": "Tajikistani Somoni",
+    "symbol": "TJS"
+  },
+  {
+    "name": "Afghan Afghani",
+    "symbol": "AFN"
+  },
+  {
+    "name": "Pakistani Rupee",
+    "symbol": "PKR"
+  },
+  {
+    "name": "Bangladeshi Taka",
+    "symbol": "BDT"
+  },
+  {
+    "name": "Sri Lankan Rupee",
+    "symbol": "LKR"
+  },
+  {
+    "name": "Nepalese Rupee",
+    "symbol": "NPR"
+  },
+  {
+    "name": "Bhutanese Ngultrum",
+    "symbol": "BTN"
+  },
+  {
+    "name": "Maldivian Rufiyaa",
+    "symbol": "MVR"
+  },
+  {
+    "name": "Iranian Rial",
+    "symbol": "IRR"
+  },
+  {
+    "name": "Iraqi Dinar",
+    "symbol": "IQD"
+  },
+  {
+    "name": "Syrian Pound",
+    "symbol": "SYP"
+  },
+  {
+    "name": "Lebanese Pound",
+    "symbol": "LBP"
+  },
+  {
+    "name": "Jordanian Dinar",
+    "symbol": "JOD"
+  },
+  {
+    "name": "Yemeni Rial",
+    "symbol": "YER"
+  }
+]
