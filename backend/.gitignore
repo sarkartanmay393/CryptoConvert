@@ -17,9 +17,6 @@ jspm_packages/
 node_modules/
 packages/
 
-# Distribution directory
-dist/
-out/
 
 # OS generated files
 .DS_Store
