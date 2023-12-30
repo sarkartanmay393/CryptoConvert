@@ -163,7 +163,7 @@ export default function ConversionBoard() {
                         {targetLoading ? (
                           <Spinner />
                         ) : form.getValues("sourceCrypto") ? (
-                          field.value
+                          field.value.toLocaleString("en-US")
                         ) : (
                           0
                         )}
