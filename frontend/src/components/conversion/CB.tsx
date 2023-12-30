@@ -43,7 +43,7 @@ export default function ConversionBoard() {
   }, [form, sourceFactor, targetFactor]);
 
   return (
-    <Card className="w-fit h-fit max-w-lg">
+    <Card className="w-fit h-fit max-w-lg bg-[rgba(188,188,188,0.1)] dark:bg-[rgba(85,83,83,0.1)]">
       <BoardHeader />
       <CardContent className="space-y-4">
         <Form {...form}>

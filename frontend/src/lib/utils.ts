@@ -6,3 +6,6 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const baseUrl = `https://crypto-convert-szaq.vercel.app`;
+
+// for dev environment
+// export const baseUrl = `http://localhost:5173`;
