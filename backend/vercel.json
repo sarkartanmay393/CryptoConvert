@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "crypto-nodejs",
+  "builds": [
+    {
+      "src": "dist/src/server.js",
+      "use": "@vercel/node",
+      "config": { "includeFiles": ["dist/**"] }
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "dist/src/server.js" }]
+}
