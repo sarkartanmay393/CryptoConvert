@@ -3,20 +3,20 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
 export const formSchema = z.object({
-  sourceCrypto: z.string().min(1, "Must choose a source"),
-  targetCurrency: z.string().min(1),
-  amount: z.number().min(1),
-  conversionResult: z.number(),
+  source: z.string().min(1, "Must choose a source"),
+  target: z.string().min(1),
+  amount: z.number().nonnegative().min(1),
+  resultAmount: z.number(),
 });
 
-export default function useCBForm() {
+export function useCustomForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      sourceCrypto: "",
-      targetCurrency: "usd",
+      source: "",
+      target: "usd",
       amount: 1,
-      conversionResult: 0,
+      resultAmount: 0,
     },
   });
 

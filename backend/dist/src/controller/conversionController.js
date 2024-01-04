@@ -10,27 +10,23 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const convertCurrency = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const { symbol, amount, convert } = req.body;
+    const { source, target, amount } = req.body;
     try {
         const queryParams = new URLSearchParams({
-            amount: amount.toString(),
-            symbol: symbol,
-            convert: convert,
+            ids: source,
+            vs_currencies: target,
+            precision: "full",
         });
-        const response = yield fetch(`https://pro-api.coinmarketcap.com/v2/tools/price-conversion?${queryParams}`, {
+        const response = yield fetch(`https://api.coingecko.com/api/v3/simple/price?${queryParams}&x_cg_demo_api_key=${process.env.CG_API_KEY}`, {
             method: "GET",
-            headers: {
-                "X-CMC_PRO_API_KEY": process.env.CMC_API_KEY || "",
-            },
         });
         const parsedData = yield response.json();
-        res.json({
-            message: `Convert ${amount} ${symbol} to ${convert}`,
-            data: parsedData.data,
-        });
+        const resultAmount = parsedData[source][target] * amount;
+        res.json({ resultAmount: resultAmount });
     }
     catch (error) {
-        res.json({ message: "conversion fialed" });
+        console.error(error);
+        res.status(500).json("Internal server error!");
     }
 });
 exports.default = convertCurrency;

@@ -27,14 +27,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importStar(require("express"));
-// import morgan from "morgan";
 const cors_1 = __importDefault(require("cors"));
 const dotenv = __importStar(require("dotenv"));
 const conversionController_1 = __importDefault(require("./controller/conversionController"));
 const currencyController_1 = __importDefault(require("./controller/currencyController"));
 dotenv.config();
 const app = (0, express_1.default)();
-// app.use(morgan("dev"));
 app.use((0, express_1.json)());
 app.use((0, cors_1.default)({ origin: "*" }));
 app.get("/api/currencies", currencyController_1.default);

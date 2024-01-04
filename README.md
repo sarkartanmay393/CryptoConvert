@@ -5,7 +5,7 @@
 <div align="center">
 
   <a href="https://github.com/sarkartanmay393/CryptoConvert">
-    <img src="./frontend/public/logo.png" alt="Logo" width="92" height="92">
+    <img src="frontend/public/logo.png" alt="Logo" width="92" height="92">
   </a>
 
 <h3 align="center">CryptoConvert</h3>

@@ -1,36 +1,19 @@
-export interface Cryptocurrency {
-  id: number;
+export type CryptoCurrency = {
+  type: string;
+  id: string;
   name: string;
   symbol: string;
-  slug: string;
-  cmc_rank: number;
-  last_updated: string;
-  quote: {
-    USD: {
-      price: number;
-    };
-  };
-  icon?: string;
-}
+  image: string;
+  current_price: number;
+  market_cap_rank: number;
+};
 
-export interface Faitcurrency {
-  Flag: string;
-  CountryName: string;
-  name: string;
-  icon: string;
-  symbol: string;
-}
-
-export interface ConversionData {
-  id: number;
-  symbol: string;
-  name: string;
+export type ConversionRequestData = {
+  source: string;
+  target: string;
   amount: number;
-  last_updated: string;
-  quote: {
-    [key: string]: {
-      price: number;
-      last_updated: string;
-    };
-  };
-}
+};
+
+export type ConversionData = {
+  resultAmount: number;
+};

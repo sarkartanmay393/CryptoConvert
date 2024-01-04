@@ -9,8 +9,8 @@ describe("Convert USD to INR realtime", () => {
     test("Should return success code and exchage rate", () => {
         const reqBody = {
             amount: 1,
-            symbol: "USD",
-            convert: "INR",
+            source: "bitcoin",
+            target: "inr",
         };
         return (0, supertest_1.default)(app_1.default)
             .post("/api/convert")
