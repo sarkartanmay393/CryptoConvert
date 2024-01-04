@@ -1,7 +1,6 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
-import { CryptoCurrency } from "./types";
-import { UseFormReturn } from "react-hook-form";
+import { CryptoCurrency, FormType } from "./types";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -21,16 +20,7 @@ export const baseUrl =
 
 export const disableConvertButton = (
   targetLoading: boolean,
-  form: UseFormReturn<
-    {
-      source: string;
-      target: string;
-      amount: number;
-      resultAmount: number;
-    },
-    any,
-    undefined
-  >
+  form: FormType
 ) => {
   if (targetLoading) {
     return true;
@@ -39,7 +29,7 @@ export const disableConvertButton = (
   if (
     form.getValues("source").length > 1 &&
     form.getValues("target").length > 1 &&
-    form.getValues("amount") >= 1
+    form.getValues("amount") > 0
   ) {
     return false;
   }
@@ -72,16 +62,7 @@ export const getSelectionValues = ({
 type args = {
   crypto: CryptoCurrency[];
   fiat: string[];
-  form: UseFormReturn<
-    {
-      source: string;
-      target: string;
-      amount: number;
-      resultAmount: number;
-    },
-    any,
-    undefined
-  >;
+  form: FormType;
   currencyHelper: {
     Flag: string;
     CountryName: string;

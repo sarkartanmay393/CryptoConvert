@@ -1,3 +1,5 @@
+import { UseFormReturn } from "react-hook-form";
+
 export type CryptoCurrency = {
   type: string;
   id: string;
@@ -17,3 +19,14 @@ export type ConversionRequestData = {
 export type ConversionData = {
   resultAmount: number;
 };
+
+export type FormType = UseFormReturn<
+  {
+    source: string;
+    target: string;
+    amount: number;
+    resultAmount: number;
+  },
+  any,
+  undefined
+>;

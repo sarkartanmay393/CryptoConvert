@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 export const formSchema = z.object({
   source: z.string().min(1, "Must choose a source"),
   target: z.string().min(1),
-  amount: z.number().nonnegative().min(1),
+  amount: z.number().min(1).gt(0),
   resultAmount: z.number(),
 });
 
