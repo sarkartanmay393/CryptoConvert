@@ -1,4 +1,4 @@
-import { ConversionBoard } from "@/components/conversion";
+import Converter from "@/components/conversion/Converter";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { toggleTheme } from "@/lib/theming";
@@ -16,7 +16,7 @@ export default function Homepage() {
         </Button>
         <Separator />
       </div>
-      <ConversionBoard />
+      <Converter />
     </div>
   );
 }

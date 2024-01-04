@@ -1,37 +1,34 @@
 import { Request, Response } from "express";
+import { CryptoConversionData } from "src/utils/types";
 
 const convertCurrency = async (req: Request, res: Response) => {
-  const { symbol, amount, convert }: RequestBody = req.body;
+  const { source, target, amount }: RequestBody = req.body;
   try {
     const queryParams = new URLSearchParams({
-      amount: amount.toString(),
-      symbol: symbol,
-      convert: convert,
+      ids: source,
+      vs_currencies: target,
+      precision: "full",
     });
 
     const response = await fetch(
-      `https://pro-api.coinmarketcap.com/v2/tools/price-conversion?${queryParams}`,
+      `https://api.coingecko.com/api/v3/simple/price?${queryParams}&x_cg_demo_api_key=${process.env.CG_API_KEY}`,
       {
         method: "GET",
-        headers: {
-          "X-CMC_PRO_API_KEY": process.env.CMC_API_KEY || "",
-        },
       }
     );
-    const parsedData = await response.json();
-    res.json({
-      message: `Convert ${amount} ${symbol} to ${convert}`,
-      data: parsedData.data,
-    });
+    const parsedData: CryptoConversionData = await response.json();
+    const resultAmount = parsedData[source][target] * amount;
+    res.json({ resultAmount: resultAmount });
   } catch (error) {
-    res.json({ message: "conversion fialed" });
+    console.error(error);
+    res.status(500).json("Internal server error!");
   }
 };
 
 export default convertCurrency;
 
 interface RequestBody {
-  symbol: string;
+  source: string;
+  target: string;
   amount: number;
-  convert: string;
 }

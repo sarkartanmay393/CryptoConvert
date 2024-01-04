@@ -1,6 +1,6 @@
 import { CardTitle, CardDescription, CardHeader } from "@/components/ui/card";
 
-export default function BoardHeader() {
+export function BoardHeader() {
   return (
     <CardHeader>
       <CardTitle>CryptoConvert</CardTitle>

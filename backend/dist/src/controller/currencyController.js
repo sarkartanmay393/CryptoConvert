@@ -8,43 +8,44 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const dummy_json_1 = __importDefault(require("../utils/dummy.json"));
 const getCryptocurrencies = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        // const response = await fetch(
-        //   "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",
-        //   {
-        //     method: "GET",
-        //     headers: {
-        //       "X-CMC_PRO_API_KEY": process.env.CMC_API_KEY || "",
-        //     },
-        //   }
-        // );
-        // const parsedData: CryptoData = await response.json();
-        // const formatedCurrencies = parsedData.data.map((d: Cryptocurrency) => ({
-        //   id: d.id,
-        //   name: d.name,
-        //   symbol: d.symbol,
-        //   slug: d.slug,
-        //   cmc_rank: d.cmc_rank,
-        //   last_updated: d.last_updated,
-        //   quote: {
-        //     USD: {
-        //       price: d.quote.USD.price,
-        //     },
-        //   },
-        // }));
+        // Fetch data from Coingecko API for cryptocurrencies
+        const queryParams = new URLSearchParams({
+            vs_currency: "usd",
+            per_page: "100",
+            page: "1",
+            sparkline: "false",
+            order: "market_cap_desc",
+            locale: "en",
+        });
+        const cryptoResponse = yield fetch(`https://api.coingecko.com/api/v3/coins/markets?${queryParams}&x_cg_demo_api_key=${process.env.CG_API_KEY}`, {
+            method: "GET",
+        });
+        const parsedCrypto = yield cryptoResponse.json();
+        const cryptocurrencies = parsedCrypto.map((currency) => ({
+            type: "crypto",
+            id: currency.id,
+            name: currency.name,
+            symbol: currency.symbol,
+            image: currency.image,
+            current_price: currency.current_price,
+            market_cap_rank: currency.market_cap_rank,
+        }));
+        // Fetch data from Coingecko API for supported currencies
+        const currencyResponse = yield fetch(`https://api.coingecko.com/api/v3/simple/supported_vs_currencies`, {
+            method: "GET",
+        });
+        const parsedCurrencies = yield currencyResponse.json();
         res.json({
-            message: "All cryptocurrencies data fetched!",
-            data: dummy_json_1.default,
+            cryptos: cryptocurrencies,
+            currencies: parsedCurrencies,
         });
     }
     catch (err) {
-        res.json({ message: "operation failed for some reason" });
+        console.error(err);
+        res.status(500).json("Internal server error!");
     }
 });
 exports.default = getCryptocurrencies;

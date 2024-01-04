@@ -15,71 +15,69 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { Cryptocurrency, Faitcurrency } from "@/lib/types";
+import { CryptoCurrency } from "@/lib/types";
+import { useState } from "react";
 
-type CBProps = {
+type Props = {
   name: string;
   value: string;
   onChange: (event: string) => void;
-  currencyData: Cryptocurrency[] | Faitcurrency[];
-  title?: string;
+  currencies: CryptoCurrency[];
   focus?: boolean;
 };
 
-export default function Combobox({
+export function AdvanceCombobox({
   name,
   value,
   onChange,
-  currencyData = [],
-  title = "Crypto",
+  currencies = [],
   focus = false,
-}: CBProps) {
-  const [open, setOpen] = React.useState(false);
-  const currencies = currencyData.map((c) => ({
-    // we dont know what types of currency data it is
-    name: c.name,
-    symbol: c.symbol.toLowerCase(),
-    icon: c.icon,
-  }));
+}: Props) {
+  const [open, setOpen] = useState(false);
 
   // to display on trigger components(e.g.btn)
-  const currentItem = currencies.find((c) => c.symbol === value);
+  const currentSelection = currencies.find((c) => c.id === value);
 
   return (
     <Popover key={name} open={open} onOpenChange={setOpen}>
-      <PopoverTrigger key={name} id={title} asChild>
+      <PopoverTrigger key={name} id={name} asChild>
         <Button
           role="combobox"
           variant="outline"
           aria-expanded={open}
           className={`w-[200px] justify-between ${focus && `border-green-500`}`}
         >
-          {currentItem?.icon && <SmallIcon iconTxt={currentItem.icon} />}
-          {value ? currentItem?.name : `Select ${title?.toLowerCase()}...`}
+          {/* {currentSelection?.image && (
+            <SmallIcon
+              image={currentSelection.image}
+              symbol={currentSelection.symbol}
+            />
+          )} */}
+          {value ? currentSelection?.name : `Select ${name?.toLowerCase()}...`}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent id={title} className="w-[180px] h-[300px] p-0">
+      <PopoverContent id={name} className="w-[180px] h-[300px] p-0">
         <Command>
-          <CommandInput placeholder={`Search ${title?.toLowerCase()}...`} />
-          <CommandEmpty>{`No ${title?.toLowerCase()} found.`}</CommandEmpty>
+          <CommandInput placeholder={`Search ${name?.toLowerCase()}...`} />
+          <CommandEmpty>{`No ${name?.toLowerCase()} found.`}</CommandEmpty>
           <CommandGroup className="overflow-scroll">
             {currencies.map((c, i) => (
               <CommandItem
-                key={c.symbol + i}
-                value={c.icon ? c.symbol : c.name}
+                key={i}
+                value={c.id}
                 onSelect={(currentValue) => {
-                  onChange(c.icon ? currentValue : c.symbol);
+                  onChange(currentValue);
                   setOpen(false);
                 }}
               >
                 <Check
                   className={cn(
                     "mr-2 h-4 w-4 text-black dark:text-white ",
-                    value === c.symbol ? "opacity-100" : "opacity-0"
+                    value === c.id ? "opacity-100" : "opacity-0"
                   )}
                 />
-                {c.icon && <SmallIcon iconTxt={c.icon} />}
+                {/* {c.icon && <SmallIcon iconTxt={c.icon} />} */}
                 {c.name}
               </CommandItem>
             ))}
@@ -89,11 +87,3 @@ export default function Combobox({
     </Popover>
   );
 }
-
-const SmallIcon = ({ iconTxt }: { iconTxt: string }) => {
-  return (
-    <div className={"w-[24px] h-[24px] mr-2 flex justify-center items-center"}>
-      <h3 className="text-black dark:text-white">{iconTxt}</h3>
-    </div>
-  );
-};

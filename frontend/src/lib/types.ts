@@ -1,36 +1,32 @@
-export interface Cryptocurrency {
-  id: number;
-  name: string;
-  symbol: string;
-  slug: string;
-  cmc_rank: number;
-  last_updated: string;
-  quote: {
-    USD: {
-      price: number;
-    };
-  };
-  icon?: string;
-}
+import { UseFormReturn } from "react-hook-form";
 
-export interface Faitcurrency {
-  Flag: string;
-  CountryName: string;
+export type CryptoCurrency = {
+  type: string;
+  id: string;
   name: string;
-  icon: string;
   symbol: string;
-}
+  image: string;
+  current_price: number;
+  market_cap_rank: number;
+};
 
-export interface ConversionData {
-  id: number;
-  symbol: string;
-  name: string;
+export type ConversionRequestData = {
+  source: string;
+  target: string;
   amount: number;
-  last_updated: string;
-  quote: {
-    [key: string]: {
-      price: number;
-      last_updated: string;
-    };
-  };
-}
+};
+
+export type ConversionData = {
+  resultAmount: number;
+};
+
+export type FormType = UseFormReturn<
+  {
+    source: string;
+    target: string;
+    amount: number;
+    resultAmount: number;
+  },
+  any,
+  undefined
+>;
