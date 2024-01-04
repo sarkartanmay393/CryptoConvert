@@ -9,7 +9,7 @@ services:
       - "4321:4321"
     restart: always
     environment:
-      CMC_API_KEY: ad33172e-865f-40d6-83a4-0b4d56cd4dcb
+      CG_API_KEY: <CG_API_KEY>
       PORT: 4321
   frontend:
     build:
