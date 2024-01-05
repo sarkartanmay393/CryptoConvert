@@ -2,7 +2,7 @@ import { CardContent, Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { BoardHeader } from "./header/Header";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CurrenciesHelperData from "@/lib/currenices.json";
 
 import { AdvanceCombobox, SimpleCombobox } from "./combobox";
@@ -41,10 +41,6 @@ export default function Converter() {
       })
       .finally(() => setTargetLoading(false));
   };
-
-  useEffect(() => {
-    console.log(fiat);
-  }, [fiat]);
 
   const { currentSelectedSource, currentSelectedTarget } = getSelectionValues({
     crypto,
@@ -101,7 +97,7 @@ export default function Converter() {
                         type="number"
                         className={cn("flex-1 rounded-sm h-full")}
                         {...field}
-                        disabled={form.getValues('source').length < 1}
+                        disabled={form.getValues("source").length < 1}
                       />
                     </div>
                   </FormControl>
@@ -122,7 +118,10 @@ export default function Converter() {
                     <SimpleCombobox
                       currencies={fiat}
                       name={field.name}
-                      onChange={field.onChange}
+                      onChange={(val) => {
+                        field.onChange(val);
+                        form.resetField("resultAmount");
+                      }}
                       value={field.value}
                     />
                   </FormControl>

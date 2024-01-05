@@ -44,7 +44,9 @@ export function SimpleCombobox({
           aria-expanded={open}
           className={`w-[200px] justify-between ${false && `border-green-500`}`}
         >
-          {value ? currentSeletection.toUpperCase() : `Select ${name?.toLowerCase()}...`}
+          {value
+            ? currentSeletection.toUpperCase()
+            : `Select ${name?.toLowerCase()}...`}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>

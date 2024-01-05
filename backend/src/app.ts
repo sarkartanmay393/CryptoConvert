@@ -8,7 +8,11 @@ dotenv.config();
 const app = express();
 
 app.use(json());
-app.use(cors({ origin: "*" }));
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "https://cryptoconvert.vercel.app"],
+  })
+);
 
 app.get("/api/currencies", getCryptocurrencies);
 app.post("/api/convert", convertCurrency);

@@ -34,7 +34,9 @@ const currencyController_1 = __importDefault(require("./controller/currencyContr
 dotenv.config();
 const app = (0, express_1.default)();
 app.use((0, express_1.json)());
-app.use((0, cors_1.default)({ origin: "*" }));
+app.use((0, cors_1.default)({
+    origin: ["http://localhost:5173", "https://cryptoconvert.vercel.app"],
+}));
 app.get("/api/currencies", currencyController_1.default);
 app.post("/api/convert", conversionController_1.default);
 exports.default = app;
